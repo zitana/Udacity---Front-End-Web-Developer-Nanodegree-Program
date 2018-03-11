@@ -1,0 +1,164 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  margin: auto;
+  max-width: 100%;
+  min-width: 400px;
+}
+
+.header {
+  order: -1;
+  width: 100%;
+  border-bottom: 2px solid  #7d97ad;
+  margin:0;
+  padding:0;
+}
+
+.logo {
+  float: left;
+  padding: 1em;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.name {
+  float: right;
+}
+
+h1 , h3{
+  text-transform: uppercase;
+  font-family: "Raleway";
+  text-align: right;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-size: 14px;
+
+}
+
+.aboutme {
+  order: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.introduction {
+  order: 1;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 1em; */
+}
+
+.picture {
+  order: 2;
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  float: right;
+  overflow:hidden
+}
+
+.picture {
+  float: right;
+}
+
+.portfolio {
+  font-family: "Roboto";
+  order: 3;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 100%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-size: cover;
+}
+.p1 .image {
+  background-image: url("../img/pixel.png");
+}
+.p2 .image {
+  background-image: url("../img/cv.png");
+}
+.p3 .image {
+  background-image: url("../img/portfolio.png");
+}
+
+.featured-projects {
+  width: 100%;
+}
+
+.project {
+  width: calc((100% - 10px)/3);
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  font-family: "Roboto";
+
+}
+
+.p1 , .p2 , .p3{
+  order: 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .introduction {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+  }
+  .picture {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  .p2 {
+    order: 5;
+  }
+
+  .p3 {
+    order: 5;
+  }
+  .project {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  .link {
+    width: inherit;
+    text-align: center;
+  }
+}
