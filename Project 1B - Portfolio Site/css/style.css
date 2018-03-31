@@ -1,16 +1,8 @@
-body {
-  width: 100%;
-}
-
 .container {
   width: 100%;
   min-width: 400px;
   display: flex;
   flex-wrap: wrap;
-}
-
-* {
-  border: 2px dashed red !important;
 }
 
 .header {
