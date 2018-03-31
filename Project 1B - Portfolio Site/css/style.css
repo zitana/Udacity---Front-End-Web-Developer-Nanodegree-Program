@@ -11,10 +11,12 @@
   border-bottom: 2px solid  #7d97ad;
   margin:0;
   padding:0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-  float: left;
+  width: 20%;
   padding: 1em;
 }
 
@@ -23,6 +25,7 @@
 }
 
 .name {
+  width: 80%;
   float: right;
 }
 
