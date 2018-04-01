@@ -98,7 +98,12 @@ a {
   text-overflow: ellipsis;
   text-transform: lowercase;
   font-style: italic;
+}
 
+footer {
+  font-style: italic;
+  font-size: 12px;
+  color: #808080;
 }
 
 @media screen and (max-width: 450px) {
